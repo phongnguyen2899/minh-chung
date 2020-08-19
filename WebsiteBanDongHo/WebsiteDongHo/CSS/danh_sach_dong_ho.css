@@ -1,0 +1,57 @@
+﻿div.filter {
+    float: left;
+    border: 0px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 20px;
+    max-width: 18%;
+    box-sizing:unset;
+}
+
+div.filter p {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 13pt;
+    color: #990000;
+}
+
+div.filter > ul, div.products > ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+div.filter > ul > li {
+    margin: 5px;
+}
+
+div.filter input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+    margin-left: 5px;
+    margin-bottom: 7px;
+}
+
+div.filter label {
+    font-size: 10pt;
+}
+.product_wrapper {
+    border-top: 0px;
+    border-right: 0px;
+    width: 77%;
+    padding-bottom:50px;
+    border-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:900px) {
+    .filter{
+        display:none;
+    }
+    .product_wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+}

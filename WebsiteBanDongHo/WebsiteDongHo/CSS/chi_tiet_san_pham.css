@@ -1,0 +1,129 @@
+﻿
+div.image_detail {
+    max-width: 400px;
+    float: left;
+    height:auto;
+    padding: 10px;
+    border: 0px;
+    text-align:center;
+}
+
+div.main_image_wrapper {
+    width: 400px;
+    border: 1px solid #d4d4d4;
+    background-color: #fff;
+}
+
+div.main_image_wrapper > img {
+    height: 400px;
+}
+
+ul.sub_image {
+    list-style: none;
+    display:inline;
+    text-align: left;
+    margin-top: 10px;
+}
+
+    ul.sub_image li {
+        display: inline-block;
+        margin-right: 3px;
+    }
+
+        ul.sub_image li:last-child {
+            margin-right: 0px;
+        }
+
+        ul.sub_image li > a > img {
+            object-fit: cover;
+            width: 93px;
+            height: 93px;
+            transition: 0.3s;
+            border: 1px solid #d4d4d4;
+        }
+
+            ul.sub_image li > a > img:hover {
+                transform: scale(1.05);
+            }
+
+div.product_detail {
+    width: 400px;
+    background-color: #fff;
+    border: 0px;
+    padding-left: 20px;
+    margin: 10px;
+    float: left;
+    text-align:left;
+}
+
+table.detail {
+    width: 100%;
+    margin-top: 10px;
+}
+
+    table.detail td {
+        font-size: 10pt;
+        padding: 5px;
+    }
+
+    table.detail tr:nth-child(even) {
+        background-color: #e8e8e8;
+    }
+
+    table.detail tr:nth-child(odd) {
+        background-color: #fff;
+    }
+
+div.product_detail p {
+    font-size: 12pt;
+    margin-top: 10px;
+}
+
+span.price {
+    color: #990000;
+    font-size: 14pt;
+    margin-left: 10px;
+}
+.add_to_cart_btn, .buy_now {
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display:block;
+    border-radius:10px;
+    margin-top: 5px;
+    font-size: 9pt;
+    color: #fff;
+    border: 0px;
+    margin-left: 2px;
+    transition: 0.2s;
+    font-weight: bold;
+}
+.add_to_cart_btn {
+    background: -webkit-linear-gradient(top,#288ad6,#0e74c2);
+}
+.add_to_cart_btn:hover {
+    background: -webkit-linear-gradient(top,#0e74c2,#288ad6);
+    color: #fff;
+}
+.buy_now {
+    background: -webkit-linear-gradient(top,#990000,#660000);
+}
+.buy_now:hover{
+    background: -webkit-linear-gradient(top,#660000,#990000);
+    color:#fff;
+}
+button.CODpayment {
+    margin-right: 5px;
+}
+span.phone_number {
+    color: #990000;
+    font-size: 12pt;
+}
+@media screen and (max-width:900px) {
+    .bodycontent{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+}

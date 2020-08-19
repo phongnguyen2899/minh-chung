@@ -1,0 +1,267 @@
+﻿body {
+    margin:0px;
+    padding:0px;
+    font-family:Verdana;
+}
+#header {
+    margin-top:10px;
+    width:100%;
+    height:57px;
+}
+.MenuChinh {
+
+}
+.MenuChinh .container {
+    text-align:center;
+    background:#990000;
+    height:40px;
+}
+.MenuChinh .container ul li{
+    display:inline-block;
+
+}
+.MenuChinh .container ul li a{
+    
+    line-height:40px;
+    text-decoration:none;
+    padding-left:10px;
+    padding-right:10px;
+    color:#fff;
+}
+
+.MenuChinh .container ul li a:hover{
+    display:block;
+    background:#C6EDBA;
+    color:#333;
+    transition:0.3s;
+}
+
+
+
+/*css trang quản lý sản phẩm*/
+.container-1 {
+    padding:20px 20px;
+    margin-left:0px;
+}
+.left {
+    border:1px solid #990000;
+    padding:3px 3px;
+    width:12%;
+}
+.left .ql{
+    float:left;
+}
+
+.right {
+    border:1qpx solid #990000;
+    min-height:100px;
+    width:100%;
+
+}
+.right .ds-sp{
+    text-align:center;
+}
+
+.tit{
+    text-align:center;
+}
+
+.container-1 .left .qlsp li a{
+    text-decoration:none;
+}
+
+
+/*css bảng danh sách sản phẩm*/
+.head{
+    text-align:center;
+    font-size:22px;
+    
+}
+.bang, th, td{
+    border:1px solid #990000;
+}
+.bang,table{
+    border-collapse:collapse;
+}
+
+/*css form them moi*/
+.themmoisanpham{
+    margin-left:20%;
+    display:block;
+}
+.formthemmoi{
+    margin-right:20px;
+}
+
+.truong{
+}
+.themmoisanpham .onhap{
+    float:left;
+    
+}
+.tentruong{
+   float:left;
+   clear:left;
+   text-align:left;
+   width:150px;
+}
+
+
+.data{
+    float:left;
+    margin-left:5%;
+}
+.them-thuong-hieu{
+    text-align:center;
+    display:inline-block;
+}
+
+.btthem{
+    text-align:center;
+    margin-left:-100%;
+    width:120px;
+    height:40px;
+    background:#fff;
+    clear:left;
+    
+}
+
+/*Css thao tác xử lý của don hang*/
+
+ /*  
+.xuly {
+    padding:10px 10px 10px 10px;
+    background:#04B431;
+    display:inline-block;
+    width:91.5%;
+}
+.xuly a{
+    text-decoration:none;
+    color:white;
+}
+.xuly .tinhtrang{
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:15px;
+    padding-right:10px;
+    margin-left:0px;
+    width:50%;
+}
+.xuly a .tinhtrang:hover{
+    background:#ccc;
+
+}
+.xuly a .chitiet{
+    margin-left:5px;
+}
+*/ 
+ .xuly{
+     background:#04B431;
+     padding:10px 10px 10px 10px;
+     text-align:center;
+     max-height:40px;
+     
+ }
+
+  .xuly .tinhtrang{
+      min-width:50%;
+      padding:10px 10px 10px 10px;
+      
+  }
+
+   .xuly .chitiet{
+       text-align:center;
+       padding:10px 10px 10px 10px;
+   }
+
+   .xuly a{
+    text-decoration:none;
+    color:white;
+    display:inline;
+    
+}
+    .xuly a:hover{
+        background:#ffd800;
+    }
+
+
+/*nut them moi*/
+.nutthemmoi{
+    width:100px;
+    height:40px;
+    background:#990000;
+    display:block;
+}
+.nutthemmoi a{
+    line-height:40px;
+    color:white;
+    text-decoration:none;
+}
+.nutthemmoi a:hover{
+    background:#CCC;
+    display:block;
+    color:#990000;
+}
+
+.qlsp{
+    display:block;
+}
+.qlsp li{
+    
+}
+.qlsp li a{
+    list-style:none;
+}
+
+
+.content{
+    text-align:center;
+}
+/*bang khach hang*/
+.bang-khach-hang{
+    width:80%;
+    text-align:left;
+    margin-left:10%;
+    
+}
+/*bang san pham*/
+  .bang-san-pham{
+      margin-left:10%;
+  }
+
+  /*css icon sua xoa*/
+   .congcu .a{
+      
+   }
+  .congcu .them{
+      width:24px;
+      height:24px;
+      background-image:url(edit.jpg);
+      float:left;
+      background-repeat:no-repeat;
+  }
+   .congcu .them1{
+       width:24px;
+       height:24px;
+       background-image:url(delete.jpg);
+       float:left;
+        background-repeat:no-repeat;
+   }
+
+/*responsive*/
+@media (max-width: 768px)
+{
+    .left {
+
+    border:1px solid #990000;
+    padding:3px 3px;
+    width:40%;
+    }
+}
+.imgsp{
+    max-width:100px;
+    max-height:80px;
+}
+.xuly a{
+    display:block;
+}

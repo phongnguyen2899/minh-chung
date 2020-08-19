@@ -1,0 +1,54 @@
+﻿.container{
+    text-align:center;
+}
+.bodycontent > p {
+    text-align:center;
+    display: block;
+    font-size: 15pt;
+    width: 100%;
+    border-top: 1px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-bottom: 10px;
+}
+
+.bannerImage {
+    width: 100%;
+    max-width:1150px;
+}
+
+.brand {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 0px;
+}
+
+.brand a {
+    margin: 10px;
+}
+
+.brandlogo {
+    transition: all .3s ease 0s;
+    width: 180px;
+    margin:0;
+}
+
+    img.brandlogo:hover {
+        transform: scale(1.05);
+    }
+
+.productlist {
+    min-width: 0px;
+    padding: 0px;
+    border: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media screen and (max-width:900px) {
+    .brandlogo {
+        width: 140px;
+    }
+}

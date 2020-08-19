@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HeaderFooter.master.cs" Inherits="WebsiteBanDongHo.HeaderFooter"  %>
+
+<!DOCTYPE html>
+
+<html>
+    <head runat="server">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <script src="https://kit.fontawesome.com/3ee1146175.js" crossorigin="anonymous"></script>
+        <!--link rel="stylesheet" href="!--https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"--> 
+        <link href="CSS/header_footer.css" rel="stylesheet" />
+        <script src="Javascript/header_footer.js"></script>
+        <title>Trang chủ</title>
+    </head>
+    <body>
+    <nav id="sideNavigation" class="sidenav">
+            <i class="fas fa-times fa-2x closebtn" onclick="closeNav()"></i>
+            <ul>
+                <li><a href="index.aspx" class="menutext">TRANG CHỦ</a></li>
+                <li><a href="danh_sach_dong_ho.aspx?kieuDang=1" class="menutext">ĐỒNG HỒ NAM</a></li>
+                <li><a href="danh_sach_dong_ho.aspx?kieuDang=2" class="menutext">ĐỒNG HỒ NỮ</a></li>
+                <li><a href="danh_sach_dong_ho.aspx?kieuDang=3" class="menutext">ĐỒNG HỒ ĐÔI</a></li>
+                <li><a href="danh_sach_dong_ho.aspx?kieuDang=4" class="menutext">PHỤ KIỆN</a></li>
+            </ul>
+    </nav>
+    <header>
+        <div class="headercontent">
+             <a class="nav_icon" href="#"><i class="fas fa-bars fa-lg" onclick="openNav()"></i></a>
+                <!--thanh nav bar-->
+                <!---->
+                <a href="index.aspx" ><img src="Images/Logo.png" alt="Home" class="logo_icon"/></a>
+                <div class="sub_item">
+                    <i class="fas fa-truck sub_icon"></i>
+                    <div>
+                        <p>Ship miễn phí</p><label>Với hóa đơn trên 500k</label>
+                    </div>
+                </div>
+                <div class="sub_item">
+                    <i class="fas fa-money-check-alt sub_icon"></i>
+                    <div>
+                        <p>Đổi trả miễn phí</p><label>Đổi trả trong vòng 7 ngày</label>
+                    </div>
+                </div>
+                <div class="sub_item">
+                    <i class="fas fa-phone-alt sub_icon"></i>
+                    <div>
+                        <p>Hotline</p><label>033-423-6169</label>
+                    </div>
+                </div>
+                <a href="gio_hang.aspx">
+                    <div class="cart_item">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p runat="server" id="cart_item_count">0</p>
+                        <h6>Giỏ hàng</h6>
+                    </div>
+                </a>
+        </div>
+        <div class="menu_wrapper">
+            <div class="menu">
+                <ul class="menulist">
+                    <li><a href="index.aspx" class="menutext">TRANG CHỦ</a></li>
+                    <li><a href="danh_sach_dong_ho.aspx?kieuDang=1" class="menutext">ĐỒNG HỒ NAM</a></li>
+                    <li><a href="danh_sach_dong_ho.aspx?kieuDang=2" class="menutext">ĐỒNG HỒ NỮ</a></li>
+                    <li><a href="danh_sach_dong_ho.aspx?kieuDang=3" class="menutext">ĐỒNG HỒ ĐÔI</a></li>
+                    <li><a href="danh_sach_dong_ho.aspx?kieuDang=4" class="menutext">PHỤ KIỆN</a></li>
+                </ul>
+                <div class="search_wrapper">
+                    <form action="a" method="post">
+                    <input  id="txt_timkiem" type="search" class="searchtextbox" placeholder="Tìm kiếm sản phẩm..." name="searchbox">
+                    <button type="submit" class="searchbutton"><i class="fas fa-search fa-lg"></i></button>
+                    </form>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+        </header>
+        <section>
+            <div class="container">
+                <div class="bodycontent">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </section>
+        <footer>
+        <div class="footercontent">
+                <div class="footer_respond">
+                    <a href="index.aspx" ><img src="Images/Logo.png" style="margin-bottom:10px;"/></a>
+                    <p>Kết nối với chúng tôi</p>
+                    <hr />
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <ul class="footerlist">
+                    <li><p>Danh mục</p><hr/></li>
+                    <li><a href="index.aspx">Trang chủ</a></li>
+                    <li><a href="danh_sach_dong_ho.aspx?kieuDang=1">Đồng hồ nam</a></li>
+                    <li><a href="danh_sach_dong_ho.aspx?kieuDang=2">Đồng hồ nữ</a></li>
+                    <li><a href="danh_sach_dong_ho.aspx?kieuDang=3">Đồng hồ đôi</a></li>
+                    <li><a href="danh_sach_dong_ho.aspx?kieuDang=4">Phụ kiện</a></li>
+                </ul>
+                <ul class="footerlist">
+                    <li><p>Thông tin</p><hr/></li>
+                    <li><h6><i class="fa fa-map-marker"></i>&ensp; 69 Định Công, Thanh Xuân, Hà Nội</h6></li>
+                    <li><h6><i class="fa fa-phone-alt"></i>&ensp; 033-423-6169</h6></li>
+                    <li><h6><i class="fa fa-envelope"></i>&ensp; dpwatch@gmail.com</h6></li>
+                </ul>
+                <ul class="footerlist">
+                    <li><p>Bản quyền</p>
+                       <hr /></li>
+                    <li><h6>Copyright (c) 2019 DP WATCH Inc.</h6></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
